@@ -36,9 +36,9 @@ public class CustomTimeCycle implements ModInitializer {
                                     }
 
                                     String dayTimeDuration = StringUtil.formatTickDuration(
-                                            (int) timeManager.getDayTimeRate().getDuration(), 20);
+                                            (int) timeManager.getDayTimeRate().getDuration());
                                     String nightTimeDuration = StringUtil.formatTickDuration(
-                                            (int) timeManager.getNightTimeRate().getDuration(), 20);
+                                            (int) timeManager.getNightTimeRate().getDuration());
                                     context.getSource().sendSuccess(() -> Component.literal("Day time duration: " + dayTimeDuration), false);
                                     context.getSource().sendSuccess(() -> Component.literal("Night time duration: " + nightTimeDuration), false);
 
